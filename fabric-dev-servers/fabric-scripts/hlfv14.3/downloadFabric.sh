@@ -27,11 +27,11 @@ pullFabricImage() {
 
 # Pull Hyperledger Fabric base images.
 for imageName in peer orderer ccenv; do
-    pullFabricImage ${imageName} 1.4.0
+    pullFabricImage ${imageName} 1.4.3
 done
 
 # Pull Hyperledger Fabric CA images.
-pullFabricImage ca 1.4.0
+pullFabricImage ca 1.4.3
 
 # Pull Hyperledger third-party images.
 pullFabricImage couchdb 0.4.13
